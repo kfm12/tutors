@@ -1,0 +1,17 @@
+.all{
+    background: #F2F2F2;
+    height: -webkit-fill-available;
+}
+
+.header {
+    /* margin: 0px 20px 0px 0px; */
+    font-family: Roboto !important;
+    font-size: 24px;
+    background: #F2F2F2;
+    margin: 2.5% 0px 0px 4%;
+}
+
+.list {
+    padding: 10px 5% 0% 5%;
+    background: #F2F2F2;
+}

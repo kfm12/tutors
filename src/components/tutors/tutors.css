@@ -1,0 +1,117 @@
+.test{
+    width: 100%;
+    background: #F2F2F2;
+    /* padding: 20px; */
+    /* margin: 20px; */
+}
+
+/* .wrapper {
+    display: flex;  
+    flex-flow: row wrap;
+    font-weight: bold;
+}
+
+.wrapper > * {
+    padding: 10px;
+    flex: 1 100%;
+} */
+  
+
+.flex_container_outer {
+    /* We first create a flex layout context */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    margin: 0px;
+    
+    /* Then we define the flow direction 
+       and if we allow the items to wrap 
+     * Remember this is the same as:
+     * flex-direction: row;
+     * flex-wrap: wrap;
+     */
+    
+    /* Then we define how is distributed the remaining space */
+    justify-content: space-between;
+    padding: 24px;
+  }
+
+  .flex_container_inner {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-around; */
+    margin: 0px;
+    
+ 
+    justify-content: space-between;
+    /* padding: 10px; */
+  }
+
+.flex_container_inner_inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 175px;
+    /* margin: 0px;
+    padding: 0px; */
+  }
+
+.name {
+    color: black !important;
+    font-family: Roboto !important;
+    font-size: 1.6em !important;
+    /* margin: 0px 0px 2% 0px !important;  */
+}
+
+.pay {
+    color: #707070 !important;
+    font-size: .9em !important;
+    font-family: Roboto !important;
+    /* line-height: 3 !important; */
+    margin: 0px 0px 7.5% 0px !important;
+}
+
+.description {
+    color: black !important;
+    font-size: .75em !important;
+    font-family: Roboto !important;
+    margin: 0px 0px 7.5% 0px !important;
+    /* width: 200%; */
+    /* text-overflow: clip; */
+}
+
+.courses {
+    color: black !important;
+    font-size: .75em !important;
+    font-family: Roboto !important;
+    /* margin: 0px 0px 7.5% 0px !important; */
+}
+
+.img{
+    border-radius: 50%;
+    width: 35%;
+    height: 35%;
+    margin: 30px 0px 20px 0px;
+    justify-content: flex-end;
+}
+
+/* @media all and (min-width: 600px) {
+    .aside { flex: 1 auto; }
+  }
+  
+  @media all and (min-width: 800px) {
+    .description   { flex: 3 0px; }
+    .courses   { flex: 3 0px; }
+    .name { order: 1; } 
+    .pay    { order: 2; }
+    .description { order: 3; }
+    .courses  { order: 4; }
+  } */
+
+.card {
+    background: white;
+    margin: 50px;
+    padding: 50p;
+    /* width: 80%; */
+    /* height: 60%; */
+}

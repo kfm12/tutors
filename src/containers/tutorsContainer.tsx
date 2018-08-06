@@ -1,6 +1,7 @@
 import * as React from "react"
 import SearchBar from 'material-ui-search-bar';
-import { TutorList } from "../components/tutorList";
+import { TutorList } from "../components/tutors/tutorList";
+import * as classes from './tutorsContainer.css';
 
 interface IProps {
     tutors: any[]
@@ -23,13 +24,15 @@ export default class TutorSearch extends React.Component<IProps, IState> {
             })
 
         return (
-            <div>
+            <div className={classes.all}> 
                 <SearchBar
                     onChange={e => this.setState({ query: e })}
                     placeholder="Search by course code"
                 />
-                <h1>List of Tutors</h1>
-                <TutorList tutors={filteredTutors} />
+                <div className={classes.header} >Tutors</div>
+                <div className={classes.list}>
+                <TutorList tutors={filteredTutors}/>
+                </div>
             </div >
         )
     }
